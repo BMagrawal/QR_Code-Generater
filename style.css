@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: crimson;
+}
+
+.container{
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: cyan;
+    border-radius: 10px;
+
+    >p{
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    >input{
+        width: 100%;
+        height: 50px;
+        border: 1px solid rgb(163, 160, 160);
+        outline: 0;
+        padding: 10px;
+        margin: 10px 0 20px;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    >button{
+        outline: 0;
+        border: 0;
+        border-radius: 10px;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(158, 150, 148);
+        font-size: 15px;
+        cursor: pointer;
+        box-shadow: 0 10px 10px  rgb(138, 116, 116) inset;
+        margin: 20px 0;
+        font-weight: 500;
+       
+
+
+
+    }
+}
+
+#imgBox{
+    
+   width: 200px;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 2s;
+
+   >img{
+    width: 100%;
+    padding: 10px;
+   }
+}
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    
+}
